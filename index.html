@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Welcome to Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
@@ -27,9 +28,21 @@
 
 </div>
 
+<button class="help">Подсказка</button>
+<div class="buttoncl"></div>
+
 <script src="quiz_controller.js"></script>
 <script src="question.js"></script>
 <script src="app.js"></script>
+
+
+<script>
+    var But1 = document.getElementsByClassName("help")[0];
+    var Help = document.getElementsByClassName("buttoncl")[0];
+
+
+    But1.addEventListener("click",function(){Help.innerHTML = "Хехе. Думай баклажан."});
+</script>
 
 </body>
 </html>
